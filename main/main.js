@@ -6,3 +6,4 @@ import { angular } from "angular"
 require("./js/app")
 require("./js/components/oa_home_view/oa_home_view.ts")
 require("./js/components/oa_todo/oa_todo.ts")
+require("./js/components/oa_users/oa_users.ts")

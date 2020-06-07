@@ -3,7 +3,7 @@ declare var LANGUAGE: string
 
 class HomeViewController{
 
-  public items: any[] = [1, 2, 3]
+  public items: any[] = [1, 2, 3, 4, 5]
 
   public constructor(){}
 
