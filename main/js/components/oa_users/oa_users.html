@@ -2,6 +2,7 @@
   <p>
    Voici la liste de users rendue dans une table
   </p>
+  <input type="text" ng-model="search">
   <table>
     <thead>
       <th>Nom</th>
@@ -9,7 +10,7 @@
       <th>Sexe</th>
     </thead>
     <tbody>
-      <tr ng-repeat="user in $ctrl.users">
+      <tr ng-repeat="user in $ctrl.users | orderBy: 'age' | filter: search">
         <td>{{user.name}}</td>
         <td>{{user.age}}</td>
         <td>{{user.sex}}</td>
