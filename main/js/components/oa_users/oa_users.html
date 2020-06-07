@@ -12,7 +12,7 @@
     <tbody>
       <tr ng-repeat="user in $ctrl.users | orderBy: 'age' | filter: search">
         <td>{{user.name}}</td>
-        <td>{{user.age}}</td>
+        <td ng-class="{'green': user.age >= 25, 'red': user.age < 25}">{{user.age}}</td>
         <td>{{user.sex}}</td>
       </tr>
     </tbody>
