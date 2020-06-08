@@ -1,9 +1,11 @@
-# import du Framework Flask pour Python
+# imports
 from flask import Flask
-# import de la librairie JSON pour Python
+from flask_cors import CORS
 import json
 
 app=Flask(__name__)
+#ajoute l'autorisation d'effectuer des requetes pour toutes les origines
+CORS=CORS(app, resources={r"/*":{"origins": "*"}})
 
 # creation de mes donnees
 data = [{'name': 'sylvain', 'age': 29, 'sex': 'h'}, 

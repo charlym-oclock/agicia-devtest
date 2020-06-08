@@ -1,6 +1,6 @@
 <div>
   <p>
-   Voici la liste de users rendue dans une table
+    Voici la liste de users rendue dans une table
   </p>
   <input type="text" ng-model="search">
   <table>
@@ -10,7 +10,7 @@
       <th>Sexe</th>
     </thead>
     <tbody>
-      <tr ng-repeat="user in $ctrl.users | orderBy: 'age' | filter: search">
+      <tr ng-repeat="user in usersList | orderBy: 'age' | filter: search">
         <td>{{user.name}}</td>
         <td ng-class="{'green': user.age >= 25, 'red': user.age < 25}">{{user.age}}</td>
         <td>{{user.sex}}</td>

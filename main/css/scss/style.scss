@@ -1,5 +1,26 @@
 body{
-  background-color: #EFEFEF;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('https://images.pexels.com/photos/1538177/pexels-photo-1538177.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  -webkit-background-size: cover;
+  -moz-background-size:  cover;
+  -o-background-size: cover;
+  color: #ececec;
+}
+
+.navbar {
+  padding: 2em 5em 0 5em;
+  top: 0;
+  left: 0;
+  display: flex;
+  &-item{
+    font-size: 2em;
+    font-weight: 700;
+    padding: 0.5em;
+    color: #ededed;
+    text-decoration: none;
+    &:hover{
+      color: goldenrod;
+    }
+  }
 }
 
 .green {

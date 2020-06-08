@@ -26,4 +26,9 @@ Journal de bord du **test technique** de Charly
   * Je débute ma recheche pour réaliser une _requete HTTP_. Les docs que je trouve ne correspondent par au modele que j'ai sur ce projet (des composants _HTML/TypeScript_). Un _tutoriel Youtube_ m'apprend a **trier mes données**, et également a mettre un **champs de recherche** qui peut fonctionner avec le nom. On m'a demande d'effectuer la recherche en Python, mais j'utilise tout de meme cette fonction afin de mettre un CSS en place dans la soirée. Je continue ma recherche pour la requete HTTP. J'imagine que _Axios_ sera utilisé, mais je ne trouve aucune documentation pertinente pour le moment. On verra ca tout a l'heure !
 
 * __dimanche soir__
-  * on va terminer le weekend avec un peu de CSS tranquille ;)
+  * on va terminer le weekend avec un peu de CSS tranquille ;) L'age s'affiche désormais en vers/rouge en fonction de la valeur, et les résultats sont triés en fonction de l'age.
+
+* __lundi matin__
+  * on commence la journée en douceur en ajoutant un peu de style sur la _navbar_. Je ne souhaite pas passer trop de temps sur le _CSS_ pour le moment car il me reste tout le travail sur la requete a faire. J'ai trouve beaucoup de docs sur le _site d'angularjs_, mais il me manque une infos pour l'adapter a ce modele de controller. **Sylvain m'envoie la réponse** que je cherchais, ce qui débloque mon affaire.
+  * OUPS, **probleme de CORS**, ca faisait longtemps tient ! Je rajoute un header _ACAO_ dans ma requete au sein du fichier typescript, et je cherche du coté de Python. Une solution simple semble d'etre utiliser _flask-cors_, ce qui est parfait car c'est justement Flask que j'utilise. **Ca fonctionne**, ma requete est bien effectué, je récupere mes données. Maintenant je cherche comment les transmettre a ma vue. J'imagine qu'il faut utiliser le _$scope_ que je vois depuis 3 jours. Je vois donc qu'il faut bien utiliser $scope dans ma requete du controller, mais **PAS** dans la vue.
+  * **mes données sont maintenant récupérées depuis l'API Python, affichées dans mon tableau, et triées en fonction de l'age**.
