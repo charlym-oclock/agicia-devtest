@@ -1,9 +1,13 @@
 body{
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('https://images.pexels.com/photos/1538177/pexels-photo-1538177.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) ), url('https://images.pexels.com/photos/1538177/pexels-photo-1538177.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
   -webkit-background-size: cover;
   -moz-background-size:  cover;
   -o-background-size: cover;
   color: #ececec;
+}
+
+.container {
+  padding: 2em 3em;
 }
 
 .navbar {
@@ -11,15 +15,72 @@ body{
   top: 0;
   left: 0;
   display: flex;
+  justify-content: center;
   &-item{
     font-size: 2em;
     font-weight: 700;
     padding: 0.5em;
-    color: #ededed;
+    color: goldenrod;
     text-decoration: none;
     &:hover{
-      color: goldenrod;
+      color: rgb(131, 11, 11);
+      text-decoration: underline;
     }
+  }
+}
+
+.users-view{
+  &-container {
+    margin: 0 auto;
+    width: 50vw;
+    text-align: center;
+  }
+  &-description{
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+}
+
+.user-name-input{
+  margin: 2em auto;
+  width: 30vw;
+  height: 2em;
+  padding: 2px;
+  background-color: rgb(29, 29, 29);
+  color: #ececec;
+  border: black 2px solid;
+  border-radius: 1em;
+  font-size: 1.6em;
+  font-weight: 500;
+  &:focus{
+    border: goldenrod 2px solid;
+  }
+}
+
+
+.usrtable{
+  width: 100%;
+  font-size: 1.5em;
+  &-head{
+    font-weight: 500;
+    color: goldenrod;
+    &-cell{
+      padding: 0.5em;
+      &:hover{
+        color: rgb(131, 11, 11);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+  &-body{
+
+  }
+  &-row{
+
+  }
+  &-cell{
+    text-transform: capitalize;
   }
 }
 
@@ -28,4 +89,12 @@ body{
 }
 .red {
   color: red;
+}
+
+.blue {
+  color: #3579bd;
+}
+
+.pink {
+  color: #d12fd1;
 }
