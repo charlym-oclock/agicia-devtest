@@ -34,8 +34,12 @@ class UsersViewController{
 
 }
 
-var app = angular.module('homeApp')
-app.component('oaUsersView', {
+var users = angular.module('homeApp')
+users.component('oaUsersView', {
   template: require('./oa_users.html'),
   controller: UsersViewController,
-})
+  $routeConfig: [
+    {path: '/users/...', name: 'OaSingleUserView', component: 'OaSingleUserView' },
+  ]
+}as any)
+users.value('$routerRootComponent', 'oaHome');

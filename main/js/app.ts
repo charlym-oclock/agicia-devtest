@@ -42,7 +42,6 @@ app.component('oaHome', {
     {path: '/', name: 'OaHomeView', component: 'oaHomeView', useAsDefault: true},
     {path: '/todo', name: 'OaTodoView', component: 'oaTodoView'},
     {path: '/users', name: 'OaUsersView', component: 'oaUsersView'},
-    // {path: `/users/${username}`, name: 'OaSingleUserView', component: 'oaSingleUserView'},
   ]
 } as any)
 app.value('$routerRootComponent', 'oaHome');
