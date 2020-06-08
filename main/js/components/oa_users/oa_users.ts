@@ -2,17 +2,7 @@ import * as angular from "angular"
 
 class UsersViewController{
 
-  // ma liste d'utilisateurs en data locale
-  // public users: any[] = [
-  //   {name : 'charly', age : 28, sex : 'male'},
-  //   {name : 'amelie', age : 24, sex : 'female'},
-  //   {name : 'arthur', age : 45, sex : 'male'},
-  //   {name : 'annie', age : 69, sex : 'female'},
-  //   {name : 'nicolas', age : 12, sex : 'male'},
-  //   {name : 'clementine', age : 11, sex : 'female'},
-  // ]
-
-  // maintenant je fais ma requete HTTP pour récupérer mes données depuis l'API
+  // je fais ma requete HTTP pour récupérer mes données depuis l'API
   public constructor(private $http: angular.IHttpService, $scope: any){
     // je creer une variable avec toutes mes infos pour passer ma requete
     var request = {

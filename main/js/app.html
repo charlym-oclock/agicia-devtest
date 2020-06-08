@@ -1,7 +1,38 @@
+
+
 <div class="navbar">
-  <a class="navbar-item" href="/#!/">Accueil</a>
-  <a class="navbar-item" href="/#!/todo">Voir la todo list</a>
-  <a class="navbar-item" href="/#!/users">Voir la list des users</a>
+  <ul class="nav navbar-nav">
+    <li>
+      <a
+        class="navbar-item"
+        ng-class="getClass('/')"
+        href="/#!/"
+      >
+        Accueil
+      </a>
+    </li>
+    <li>
+      <a
+        class="navbar-item"
+        ng-class="getClass('/todo')"
+        href="/#!/todo"
+      >
+        Voir la todo list
+      </a>
+    </li>
+    <li>
+      <a
+        class="navbar-item"
+        ng-class="getClass('/users')"
+        href="/#!/users"
+      >
+        Voir la list des users
+      </a>
+    </li>
+  </ul>
+
+  
+
 </div>
 
 <br/><br/><br/>

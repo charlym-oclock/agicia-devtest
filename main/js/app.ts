@@ -42,6 +42,13 @@ app.component('oaHome', {
     {path: '/', name: 'OaHomeView', component: 'oaHomeView', useAsDefault: true},
     {path: '/todo', name: 'OaTodoView', component: 'oaTodoView'},
     {path: '/users', name: 'OaUsersView', component: 'oaUsersView'},
+    // {path: `/users/${username}`, name: 'OaSingleUserView', component: 'oaSingleUserView'},
   ]
 } as any)
 app.value('$routerRootComponent', 'oaHome');
+
+// code non utilisable ici, mais que je garde sous la main pour appliquer ma classe active a mes elements de la navbar
+// $scope.getClass = function (path) {
+//   return ($location.path() == path) ? 'active' : '';
+// }
+

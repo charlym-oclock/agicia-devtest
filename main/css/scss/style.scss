@@ -68,6 +68,7 @@ body{
     color: goldenrod;
     &-cell{
       padding: 0.5em;
+      text-align: center;
       &:hover{
         color: rgb(131, 11, 11);
         text-decoration: underline;
@@ -75,14 +76,12 @@ body{
       }
     }
   }
-  &-body{
-
-  }
-  &-row{
-
-  }
   &-cell{
     text-transform: capitalize;
+    & a{
+      color: #ececec;
+      text-decoration: none;
+    }
   }
 }
 
