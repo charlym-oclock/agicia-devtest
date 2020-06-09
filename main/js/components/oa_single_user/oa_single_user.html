@@ -2,4 +2,27 @@
   <p class="users-view-description">
     Vue d'un seul utilisateur
   </p>
+  <div class="table-container">
+    <table class="usrtable">
+      <thead class="usrtable-head">
+        <th class="usrtable-head-cell">Nom</th>
+        <th class="usrtable-head-cell">Age</th>
+        <th class="usrtable-head-cell">Sexe</th>
+      </thead>
+      <tbody class="usrtable-body">
+        <tr
+          class="usrtable-row"
+        >
+          <td class="usrtable-cell">{{user.name}}</td>
+          <td class="usrtable-cell">
+            <span ng-class="{'green': user.age >= 25, 'red': user.age < 25}">{{user.age}}</span>
+          </td>
+          <td class="usrtable-cell">
+            <span ng-class="{'blue': user.sex == 
+            'h', 'pink': user.sex == 'f'}">{{user.sex}}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

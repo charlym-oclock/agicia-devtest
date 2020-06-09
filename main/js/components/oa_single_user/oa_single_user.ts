@@ -22,14 +22,14 @@ class SingleUserViewController{
 
     $http(request).then(function success(response) {
         // je stocke les données récupérées dans une variable que je pourrai transmettre a ma vue
-      $scope.user = response.data;
+      $scope.userInfos = response.data;
       // je verifie en console ce que me renvoie la requete
-      console.log($scope.user);
+      console.log($scope.userInfos);
     }, function error(response){
       // en cas d'echec, je transmet le status d'erreur a ma vue
-      $scope.user = response.statusText;
+      $scope.userInfos = response.statusText;
       // je verifie en console ce que me renvoie la requete
-      console.log($scope.user);
+      console.log($scope.userInfos);
     })
   }
 
@@ -37,7 +37,6 @@ class SingleUserViewController{
   // recuperer le nom dans l'URL
     var userName = next.params.id;
     console.log(userName)
-    return userName;
   }
 
   public $onInit(): void{
