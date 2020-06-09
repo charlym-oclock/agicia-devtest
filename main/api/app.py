@@ -5,7 +5,7 @@ import json
 
 app=Flask(__name__)
 #ajoute l'autorisation d'effectuer des requetes pour toutes les origines
-CORS=CORS(app, resources={r"/*":{"origins": "*"}})
+CORS=CORS(app, resources={r"/*":{"origins": "http://localhost:8000"}})
 
 # creation de mes donnees
 data = [{'name': 'sylvain', 'age': 29, 'sex': 'h'}, 
@@ -36,3 +36,4 @@ def user(name):
 
 if __name__ == "__main__":
   app.run(threaded=True, debug=True)
+  
