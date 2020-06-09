@@ -1,0 +1,35 @@
+<div class="users-view-container">
+  <p class="users-view-description">
+    Voici la liste de users rendue dans une table
+  </p>
+  <!-- a changer contre un submit pour effectuer une requete vers l'API -->
+  <input
+    class="user-name-input"
+    type="text"
+    ng-model="search"
+    placeholder="Saisir un nom pour filtrer"
+  >
+  <div class="table-container">
+    <table class="usrtable">
+      <thead class="usrtable-head">
+        <th class="usrtable-head-cell">Nom</th>
+        <th class="usrtable-head-cell">Age</th>
+        <th class="usrtable-head-cell">Sexe</th>
+      </thead>
+      <tbody class="usrtable-body">
+        <tr
+          class="usrtable-row"
+          ng-repeat="user in usersList | orderBy: 'age' | filter: search">
+          <td class="usrtable-cell"><a href="/#!/users/{{user.name}}">{{user.name}}</a></td>
+          <td class="usrtable-cell">
+            <span ng-class="{'green': user.age >= 25, 'red': user.age < 25}">{{user.age}}</span>
+          </td>
+          <td class="usrtable-cell">
+            <span ng-class="{'blue': user.sex == 
+            'h', 'pink': user.sex == 'f'}">{{user.sex}}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
