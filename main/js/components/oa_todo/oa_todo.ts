@@ -1,10 +1,10 @@
 import * as angular from "angular"
 
-class TodoViewController{
+class TodoViewController {
 
-  public constructor(){}
+  public constructor() { }
 
-  public $onInit(): void{
+  public $onInit(): void {
   }
 
 }

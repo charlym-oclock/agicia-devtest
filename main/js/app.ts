@@ -39,9 +39,9 @@ app.factory('responseObserver', ($q: any, $window: any): any => {
 app.component('oaHome', {
   template: require('./app.html'),
   $routeConfig: [
-    {path: '/', name: 'OaHomeView', component: 'oaHomeView', useAsDefault: true},
-    {path: '/todo', name: 'OaTodoView', component: 'oaTodoView'},
-    {path: '/users/...', name: 'OaUsers', component: 'oaUsers'},
+    { path: '/', name: 'OaHomeView', component: 'oaHomeView', useAsDefault: true },
+    { path: '/todo', name: 'OaTodoView', component: 'oaTodoView' },
+    { path: '/users/...', name: 'OaUsers', component: 'oaUsers' },
   ]
 } as any)
 app.value('$routerRootComponent', 'oaHome');

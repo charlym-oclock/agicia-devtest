@@ -1,13 +1,13 @@
 import * as angular from "angular"
 declare var LANGUAGE: string
 
-class HomeViewController{
+class HomeViewController {
 
   public items: any[] = [1, 2, 3, 4, 5]
 
-  public constructor(){}
+  public constructor() { }
 
-  public $onInit(): void{
+  public $onInit(): void {
   }
 
 }

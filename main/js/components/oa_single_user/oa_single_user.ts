@@ -5,11 +5,11 @@ class SingleUserViewController{
   public constructor(private $http: angular.IHttpService, $scope: any) {
     
     // je fais un test avec une variable locale (ca fonctionne)
-    var userName = 'sylvain';
+    // var userName = 'sylvain';
     // je test ma methode getData afin de voir si je recupere bien le nom dans l'URL
-    this.getData();
+    // this.getData();
     // syntaxe que je devrais utiliser
-    // var userName = this.getData(next.params.id)
+    var userName = this.getData();
     // je fais ma requete HTTP pour récupérer mes données depuis l'API
     // je commence par creer une variable avec toutes mes infos pour passer ma requete
     var request = {
