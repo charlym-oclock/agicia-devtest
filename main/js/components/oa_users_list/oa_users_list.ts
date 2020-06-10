@@ -19,18 +19,19 @@ class UsersListViewController {
       },
     }
 
-    $http(request).then((response) : void => {
+    $http(request).then((response): void => {
       // je stocke les données récupérées dans une variable que je pourrai transmettre a ma vue
       this.usersList = response.data;
       // je verifie en console ce que me renvoie la requete
       console.log(this.usersList);
     })
-  //   .error((response) : void => {
-  //     // en cas d'echec, je transmet le status d'erreur a ma vue
-  //     this.usersList = response.statusText;
-  //     // je verifie en console ce que me renvoie la requete
-  //     console.log(this.usersList);
-  //   })
+    // a voir comment gérer les erreur?
+    //   .error((response) : void => {
+    //     // en cas d'echec, je transmet le status d'erreur a ma vue
+    //     this.usersList = response.statusText;
+    //     // je verifie en console ce que me renvoie la requete
+    //     console.log(this.usersList);
+    //   })
   }
 
   public $onInit(): void {

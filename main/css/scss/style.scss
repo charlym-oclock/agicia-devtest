@@ -40,6 +40,10 @@ ul{
   }
 }
 
+.active {
+  background-color: white;
+}
+
 /// vue listes des utilisateurs
 .users-view {
   &-container {

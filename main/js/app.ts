@@ -3,6 +3,15 @@ import * as router from "@angular/router/angular1/angular_1_router"
 // Log to force import
 console.log(router)
 
+class AppController {
+
+  public constructor() { }
+
+  public $onInit(): void{
+
+  }
+}
+
 // Add fake module from odfplus
 var app = angular.module('templates', []);
 
@@ -47,7 +56,4 @@ app.component('oaHome', {
 app.value('$routerRootComponent', 'oaHome');
 
 // code non utilisable ici, mais que je garde sous la main pour appliquer ma classe active a mes elements de la navbar
-// $scope.getClass = function (path) {
-//   return ($location.path() == path) ? 'active' : '';
-// }
 
