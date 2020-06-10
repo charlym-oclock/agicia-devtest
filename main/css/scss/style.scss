@@ -1,10 +1,15 @@
 /// Page
-body{
-  background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) ), url('https://images.pexels.com/photos/1538177/pexels-photo-1538177.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("https://images.pexels.com/photos/1538177/pexels-photo-1538177.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   -webkit-background-size: cover;
-  -moz-background-size:  cover;
+  -moz-background-size: cover;
   -o-background-size: cover;
   color: #ececec;
+}
+
+ul{
+  list-style-type: none;
 }
 
 .container {
@@ -13,18 +18,22 @@ body{
 
 /// Navigation
 .navbar {
-  padding: 2em 5em 0 5em;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  &-item{
+  &-component {
+    padding: 2em 5em 0 5em;
+    top: 0;
+    left: 0;
+  }
+  &-container {
+    display: flex;
+    justify-content: center;
+  }
+  &-item {
     font-size: 2em;
     font-weight: 700;
     padding: 0.5em;
     color: goldenrod;
     text-decoration: none;
-    &:hover{
+    &:hover {
       color: rgb(131, 11, 11);
       text-decoration: underline;
     }
@@ -32,19 +41,19 @@ body{
 }
 
 /// vue listes des utilisateurs
-.users-view{
+.users-view {
   &-container {
     margin: 0 auto;
     width: 50vw;
     text-align: center;
   }
-  &-description{
+  &-description {
     font-size: 1.8em;
     font-weight: 600;
   }
 }
 
-.user-name-input{
+.user-name-input {
   margin: 2em auto;
   width: 30vw;
   height: 2em;
@@ -55,30 +64,30 @@ body{
   border-radius: 1em;
   font-size: 1.6em;
   font-weight: 500;
-  &:focus{
+  &:focus {
     border: goldenrod 2px solid;
   }
 }
 
-.usrtable{
+.usrtable {
   width: 100%;
   font-size: 1.5em;
-  &-head{
+  &-head {
     font-weight: 500;
     color: goldenrod;
-    &-cell{
+    &-cell {
       padding: 0.5em;
       text-align: center;
-      &:hover{
+      &:hover {
         color: rgb(131, 11, 11);
         text-decoration: underline;
         cursor: pointer;
       }
     }
   }
-  &-cell{
+  &-cell {
     text-transform: capitalize;
-    & a{
+    & a {
       color: #ececec;
       text-decoration: none;
     }
