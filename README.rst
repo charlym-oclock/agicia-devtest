@@ -22,3 +22,16 @@ Aller voir::
 
   $ firefox http://localhost:8000/#!/todo
 
+Install Python virtual environment::
+  $ python3 -m venv venv
+
+Run Python virtual environment
+  $ . venv/bin/activate
+
+Install Flask::
+  $ pip install Flask
+
+Run Flask application::
+  $ cd main/api
+  $ export FLASK_APP=app.py
+  $ flask run
