@@ -1,3 +1,4 @@
 dist/
 node_modules/
-main/api/venv
+main/api/venv/
+main/api/__pycache__/
