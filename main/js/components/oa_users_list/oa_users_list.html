@@ -16,7 +16,7 @@
       </thead>
       <tbody class="usrtable-body">
         <tr class="usrtable-row" ng-repeat="user in $ctrl.usersList | orderBy: 'age' | filter: search">
-          <td class="usrtable-cell"><a href="/#!/users/{{user.name}}">{{user.name}}</a></td>
+          <td class="usrtable-cell"><a href="/js/#!/users/{{user.name}}">{{user.name}}</a></td>
           <td class="usrtable-cell">
             <span ng-class="{'green': user.age >= 25, 'red': user.age < 25}">{{user.age}}</span>
           </td>

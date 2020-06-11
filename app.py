@@ -1,5 +1,5 @@
 # imports
-from flask import Flask, request, send_from_directory
+from flask import Flask, send_from_directory
 from flask_cors import CORS
 import json
 
@@ -17,9 +17,13 @@ data = [
     {"name": "annie", "age": 69, "sex": "f"},
 ]
 
+@app.route('/js/')
+def root():
+    return send_from_directory('./', 'index.html')
+
 @app.route('/js/<path:path>')
 def send_js(path):
-    return send_from_directory('js', path)
+    return send_from_directory('./', path)
 
 # je definie la route sur laquelle je recupere mes donnees
 @app.route("/users", methods=["GET"])
