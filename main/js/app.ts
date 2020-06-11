@@ -5,10 +5,14 @@ console.log(router)
 
 class AppController {
 
-  public constructor() { }
+  public constructor(public $location: angular.ILocationService) {
+  }
+
+  public isActive(destination: any): boolean {
+    return destination === this.$location.path();
+  }
 
   public $onInit(): void{
-
   }
 }
 
@@ -47,6 +51,7 @@ app.factory('responseObserver', ($q: any, $window: any): any => {
 
 app.component('oaHome', {
   template: require('./app.html'),
+  controller: AppController,
   $routeConfig: [
     { path: '/', name: 'OaHomeView', component: 'oaHomeView', useAsDefault: true },
     { path: '/todo', name: 'OaTodoView', component: 'oaTodoView' },
@@ -54,6 +59,3 @@ app.component('oaHome', {
   ]
 } as any)
 app.value('$routerRootComponent', 'oaHome');
-
-// code non utilisable ici, mais que je garde sous la main pour appliquer ma classe active a mes elements de la navbar
-

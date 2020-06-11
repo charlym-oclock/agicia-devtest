@@ -1,9 +1,9 @@
 # imports
-from flask import Flask
+from flask import Flask, request, send_from_directory
 from flask_cors import CORS
 import json
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 # ajoute l'autorisation d'effectuer des requetes pour toutes les origines
 CORS = CORS(app, resources={r"/*": {"origins": "http://localhost:8000"}})
 
@@ -16,6 +16,10 @@ data = [
     {"name": "charly", "age": 14, "sex": "h"},
     {"name": "annie", "age": 69, "sex": "f"},
 ]
+
+@app.route('/js/<path:path>')
+def send_js(path):
+    return send_from_directory('js', path)
 
 # je definie la route sur laquelle je recupere mes donnees
 @app.route("/users", methods=["GET"])

@@ -4,6 +4,8 @@ class UsersListViewController {
 
   public usersList: any = []
 
+  public inputValue: string = ""
+
   // je fais ma requete HTTP pour récupérer mes données depuis l'API
   public constructor(private $http: angular.IHttpService) {
 
@@ -37,6 +39,7 @@ class UsersListViewController {
 
   // je creer une methode qui va aller chercher mes infos sur l'API
   public getData(name: any): void {
+    this.inputValue = name;
     // je fais ma requete HTTP pour récupérer mes données depuis l'API
     // je commence par creer une variable avec toutes mes infos pour passer ma requete
     var request = {
