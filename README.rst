@@ -14,14 +14,6 @@ Run application server::
 
   $ python2 -m SimpleHTTPServer 8000
 
-Open app::
-
-  $ firefox http://localhost:8000
-
-Aller voir::
-
-  $ firefox http://localhost:8000/#!/todo
-
 Install Python virtual environment::
   $ python3 -m venv venv
 
@@ -32,6 +24,9 @@ Install Flask::
   $ pip install Flask
 
 Run Flask application::
-  $ cd main/api
   $ export FLASK_APP=app.py
   $ flask run
+
+Open app::
+
+  $ firefox 127.0.0.1:5000/js/#!/
