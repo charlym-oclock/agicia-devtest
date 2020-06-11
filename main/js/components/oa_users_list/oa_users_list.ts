@@ -37,8 +37,6 @@ class UsersListViewController {
 
   // je creer une methode qui va aller chercher mes infos sur l'API
   public getData(name: any): void {
-    // this.userName = name;
-    // console.log("fonction getData appelée")
     // je fais ma requete HTTP pour récupérer mes données depuis l'API
     // je commence par creer une variable avec toutes mes infos pour passer ma requete
     var request = {
