@@ -10,7 +10,7 @@ class SingleUserViewController {
   public constructor(private $http: angular.IHttpService) {
   }
 
-  // je creer une methode qui va aller chercher mes infos dans l'URL
+  // je creer une methode qui va aller chercher mes infos sur l'API
   public getData(id: any): void {
     this.uName = id;
     // je fais ma requete HTTP pour récupérer mes données depuis l'API
