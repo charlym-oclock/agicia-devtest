@@ -10,10 +10,6 @@ Build TS to JS::
 
   $ ./node_modules/.bin/webpack
 
-Run application server::
-
-  $ python2 -m SimpleHTTPServer 8000
-
 Install Python virtual environment::
   $ python3 -m venv venv
 
